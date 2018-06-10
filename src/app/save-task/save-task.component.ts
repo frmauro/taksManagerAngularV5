@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Task } from '../Task';
 
 @Component({
   selector: 'app-save-task',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaveTaskComponent implements OnInit {
 
-  description = "Task 001";
+  task: Task = {
+    id: 1,
+    description: "Task 001"
+  } 
   
   constructor() { }
 
