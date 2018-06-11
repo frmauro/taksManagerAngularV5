@@ -13,10 +13,17 @@ import { TASKS } from './../mock-tasks';
 export class ListTaskComponent implements OnInit {
 
   tasks = TASKS;
+  selectedTask: Task;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  onSelect(task: Task): void {
+     this.selectedTask = task;
+     console.log(this.selectedTask);
   }
 
 }
