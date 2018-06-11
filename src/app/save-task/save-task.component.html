@@ -1,9 +1,13 @@
 <h1>
   save-task works!
 </h1>
-<h2>{{ task.description }} Details</h2>
+<h2>{{ task.description | uppercase }} Details</h2>
 <div><span>id: </span>{{task.id}}</div>
-<div><span>name: </span>{{task.description}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="task.description" placeholder="description">
+  </label>
+</div>
 <!-- <input type="text" id="txtDescricao" name="txtDescricao" ></input> -->
 
 
