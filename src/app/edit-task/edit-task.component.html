@@ -1,3 +1,15 @@
 <p>
   edit-task works!
 </p>
+
+<div *ngIf="task">
+
+  <h2>{{ task.description | uppercase }} Details</h2>
+  <div><span>id: </span>{{task.id}}</div>
+  <div>
+    <label>description:
+      <input [(ngModel)]="task.description" placeholder="description"/>
+    </label>
+  </div>
+
+</div>

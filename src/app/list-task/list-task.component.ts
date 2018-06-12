@@ -23,7 +23,7 @@ export class ListTaskComponent implements OnInit {
 
   onSelect(task: Task): void {
      this.selectedTask = task;
-     console.log(this.selectedTask);
+     //console.log(this.selectedTask);
   }
 
 }
